@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+.env
+.env.*
+
+# IDEs
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data artifacts (keep folders, ignore contents by default)
+data/raw/**
+data/canonical/**
+!data/raw/.gitkeep
+!data/canonical/.gitkeep
+!data/raw/images/.gitkeep
+!data/raw/ocr_text/.gitkeep
+!data/raw/ingest_events/.gitkeep
+!data/canonical/receipts/.gitkeep
+!data/canonical/items/.gitkeep
+
+# Logs
+*.log
+logs/

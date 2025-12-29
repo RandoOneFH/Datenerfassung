@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Canonical Receipt",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "receipt",
+    "line_items",
+    "totals",
+    "provenance"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "receipt": {
+      "type": "object"
+    },
+    "line_items": {
+      "type": "array"
+    },
+    "totals": {
+      "type": "object"
+    },
+    "provenance": {
+      "type": "object"
+    }
+  }
+}

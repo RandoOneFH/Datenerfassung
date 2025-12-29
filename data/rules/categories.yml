@@ -1,0 +1,20 @@
+version: 1
+rules:
+  - id: deposit_pfand
+    priority: 200
+    when:
+      any:
+        - regex: "\\bpfand\\b"
+    then:
+      category: groceries.deposit
+      tags_add: ["deposit"]
+      confidence: 0.99
+
+  - id: household_detergent
+    priority: 90
+    when:
+      any:
+        - contains_any: ["waschmittel", "reiniger", "frosch"]
+    then:
+      category: household.cleaning
+      confidence: 0.95

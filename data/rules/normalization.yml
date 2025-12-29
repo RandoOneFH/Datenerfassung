@@ -1,0 +1,9 @@
+version: 1
+stopwords:
+  - k
+  - kbio
+  - bio
+synonyms:
+  champig: champignon
+  champignons: champignon
+  h-milch: milch
