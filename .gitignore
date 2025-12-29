@@ -16,6 +16,9 @@ venv/
 .vscode/
 .idea/
 
+# Local bundled binaries (e.g., tesseract)
+bin/
+
 # OS
 .DS_Store
 Thumbs.db

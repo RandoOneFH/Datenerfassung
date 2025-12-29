@@ -84,6 +84,7 @@ Der initiale Fokus liegt bewusst auf **Datenqualität, Transparenz und Erweiterb
 **Beispielhafte Endpunkte**
 - `POST /ingest/image`
 - `POST /ingest/text`
+- `POST /ingest/receipt_json` (structured receipt JSON, e.g. OCR post-processing output)
 
 **Output**
 - `ingest_result.json`
@@ -103,6 +104,9 @@ Der initiale Fokus liegt bewusst auf **Datenqualität, Transparenz und Erweiterb
 - Normalisierung
 - Regelbasierte Kategorisierung
 - Persistenz als JSON
+
+**Beispielhafte Endpunkte**
+- `POST /receipts/ingest_text` (OCR-Text → canonical receipt JSON)
 
 ---
 
@@ -183,7 +187,7 @@ data/
   },
   "provenance": {
     "source_type": "image",
-    "ocr_engine": "tesseract",
+    "ocr_engine": "paddleocr",
     "parser": "de_receipt_v1",
     "created_at": "2025-12-29T12:10:00+01:00"
   }
@@ -227,7 +231,8 @@ data/
 - groceries.pantry
 - groceries.snacks
 - groceries.beverages
-- groceries.spices_sauces
+- groceries.spices
+- groceries.sauces
 - groceries.frozen
 - groceries.deposit
 - household.cleaning

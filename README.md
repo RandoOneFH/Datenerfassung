@@ -23,6 +23,10 @@ pip install -U pip
 pip install -e .[dev]
 ```
 
+## Run (local)
+- Receipt API: `python -m uvicorn datenerfassung.services.household_receipt_service.app:app --reload --port 8001`
+- Ingest API: `python -m uvicorn datenerfassung.services.ingest_service.app:app --reload --port 8000`
+
 ## Docs
 - `docs/household_ingest_poc.md`
 

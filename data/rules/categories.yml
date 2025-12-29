@@ -4,6 +4,7 @@ rules:
     priority: 200
     when:
       any:
+        - contains_any: ["pfand", "pfandartikel"]
         - regex: "\\bpfand\\b"
     then:
       category: groceries.deposit
